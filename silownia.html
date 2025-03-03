@@ -1,0 +1,96 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+        <title>Silownia Mocarza</title>
+    </head>
+    </html>
+    <body>
+        <header class="header">
+            <a href="javascript:void(0);" onclick="window.location.reload();">
+                <img src="logo.jpg" alt="Gym Logo">
+            </a>
+            <nav>
+                <a href="trening.html">Trening</a>
+
+                <a href="sklep.html">Sklep</a>
+            </nav>
+        </header>
+
+        <div class="container">
+            <section class="karnety">
+                <div class="karnet silver">
+                    <h3>⭐ ⭐ KARNET SILVER</h3>
+                    <p class="price">169 zł <span>wpisowe 55 zł</span></p>
+                    <ul>
+                        <li>✅ dostęp do wszystkich stref treningowych</li>
+                        <li>✅ jednorazowa godzinna konsultacja trenerska</li>
+                        <li>✅ zajęcia fitness w cenie karnetu</li>
+                        <li>✅ dostęp do aplikacji mobilnej</li>
+                        <li>✅ możliwość rezerwacji zajęć grupowych</li>
+                        <li>❌ zamrożenie karnetu</li>
+                    </ul>
+                    <div class="options">
+                        <label><input type="radio" name="karnet1"> Karnet na rok (2 miesiące gratis)</label>
+                        <label><input type="radio" name="karnet2"> Jestem STUDENTEM</label>
+                        <label><input type="radio" name="karnet2"> Jestem SENIOREM</label>
+                    </div>
+                    <button>WYBIERAM</button>
+                </div>
+
+                <div class="karnet gold">
+                    <h3>⭐ ⭐ ⭐ KARNET GOLD</h3>
+                    <p class="price">179 zł <span>wpisowe 55 zł</span></p>
+                    <ul>
+                        <li>✅ dostęp do wszystkich stref treningowych</li>
+                        <li>✅ jednorazowa godzinna konsultacja trenerska</li>
+                        <li>✅ zajęcia fitness w cenie karnetu</li>
+                        <li>✅ dostęp do aplikacji mobilnej</li>
+                        <li>✅ możliwość rezerwacji zajęć grupowych</li>
+                        <li>✅ zamrożenie karnetu 2x w roku</li>
+                    </ul>
+                    <div class="options">
+                        <label><input type="radio" name="karnet1"> Karnet na rok (2 miesiące gratis)</label>
+                        <label><input type="radio" name="karnet2"> Jestem STUDENTEM</label>
+                        <label><input type="radio" name="karnet2"> Jestem SENIOREM</label>
+                    </div>
+                    <button>WYBIERAM</button>
+                </div>
+
+                <div class="karnet platinum">
+                    <h3>⭐ ⭐ ⭐ ⭐ KARNET PLATINUM</h3>
+                    <p class="price">199 zł <span>wpisowe 55 zł</span></p>
+                    <ul>
+                        <li>✅ dostęp do wszystkich stref treningowych</li>
+                        <li>✅ jednorazowa godzinna konsultacja trenerska</li>
+                        <li>✅ zajęcia fitness w cenie karnetu</li>
+                        <li>✅ dostęp do aplikacji mobilnej</li>
+                        <li>✅ rezerwacja zajęć max 2x dziennie</li>
+                        <li>✅ zamrożenie karnetu 3x w roku</li>
+                        <li>✅ Dostęp do wszystkich klubów</li>
+                    </ul>
+                    <div class="options">
+                        <label><input type="radio" name="karnet2"> Jestem STUDENTEM</label>
+                        <label><input type="radio" name="karnet2"> Jestem SENIOREM</label>
+                    </div>
+                    <button>WYBIERAM</button>
+                </div>
+            </section>
+        </div>
+        <div class="cta">
+            <button id="mapkasilka" onclick="showMap()">Pobliskie siłownie</button>
+        </div>
+        
+        <div id="map-container" style="display: none; margin-top: 20px; text-align: center;">
+            <iframe src="https://www.google.com/maps/d/embed?mid=1XLJ9xTxTbsER5kq5IG05bQ5jPzoByEg&ehbc=2E312F"
+            width="70%" 
+            height="450">
+            </iframe>
+        </div>  
+        
+    </body>
+    <script src='main.js'></script>
+    </html>

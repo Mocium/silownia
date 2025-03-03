@@ -1,0 +1,292 @@
+/* Domyślny jasny motyw */
+body {
+    background-color: #fff;
+    color: #000;
+    transition: background-color 0.3s, color 0.3s; /* Płynna zmiana koloru */
+}
+
+/* Ciemny motyw */
+body.dark-mode {
+    background-color: #121212;
+    color: #fff;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('tlo.jpg') center/cover no-repeat fixed;
+    color: rgb(255, 0, 0);
+text-shadow: 1px 1px 3px black;
+
+}
+.header {
+    background-color: #111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+}
+.header img {
+    height: 50px;
+}
+.header nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.cta {
+    text-align: center;
+    margin: 30px 0;
+}
+#mapkasilka {
+    background-color: yellow;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 5px;
+    width: auto;
+    text-align: center;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.karnety {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.karnet {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7));
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s;
+    
+}
+.karnet:hover, .trener:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Cień po hoverze */
+}
+.karnet h3 {
+    margin: 0;
+    padding: 10px 0;
+}
+.price {
+    font-size: 24px;
+    font-weight: bold;
+}
+.price span {
+    display: block;
+    font-size: 14px;
+    color: grey;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+ul li {
+    text-align: left;
+    padding: 5px 0;
+}
+.options {
+    margin-top: 10px;
+}
+.options label {
+    display: block;
+    margin-bottom: 5px;
+}
+button {
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+button:hover {
+    background: #ffcc00;
+    color: black;
+}
+#mapkasilka:hover {
+    background-color: orange;
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+#map-container {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    border-radius: 10px; /* Zaokrąglone rogi */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Lekki cień */
+}
+.trenerzy {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.trener {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7));
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s;
+}
+.szczegoly {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 80%;
+    max-width: 500px;
+    margin: 20px auto;
+}
+.szczegoly ul {
+    text-align: left;
+    padding: 0;
+}
+.szczegoly button {
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+.szczegoly button:hover {
+    background: #444;
+}
+.szczegoly-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    width: 80%;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.szczegoly-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.szczegoly-img {
+    flex: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.szczegoly-img img {
+    width: 100%;
+    max-width: 300px; /* Powiększamy zdjęcie */
+    height: auto;
+    border-radius: 10px;
+    object-fit: contain; /* Zapewnia, że zdjęcie nie będzie przycięte */
+}
+/* Styl dla sekcji sklepu */
+.sklep {
+    margin-top: 30px; /* Dodajemy odstęp od nagłówka */
+}
+.sklep {
+    background-color: transparent; /* Usuwamy przezroczyste tło */
+}
+
+/* Stylizacja nagłówka "Produkty na recepcji" */
+.sklep h2 {
+    margin-bottom: 20px; /* Dodajemy odstęp od produktów */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+
+.produkty {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.produkt {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    width: 220px;
+    background-color: #fff; /* Tło dla produktu */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Dodanie cienia */
+}
+
+.produkt:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.produkt img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: contain;
+}
+
+.produkt h3 {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+.produkt ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.produkt ul li {
+    padding: 5px 0;
+}
+
+button {
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #ffcc00;
+    color: black;
+}

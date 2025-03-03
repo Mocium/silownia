@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sklep Siłownia Mocarza</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="javascript:void(0);" onclick="window.location.reload();">
+            <img src="logo.jpg" alt="Gym Logo">
+        </a>
+        <nav>
+            <a href="silownia.html">Karnety</a>
+            <a href="trening.html">Trening</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- Sekcja sklepu -->
+        <section class="sklep">
+            <h2>Produkty na recepcji</h2>
+            <div class="produkty">
+                <div class="produkt">
+                    <img src="przedtreningowka.jpg" alt="Przedtreningówka">
+                    <h3>Przedtreningówka</h3>
+                    <p class="price">99 zł</p>
+                    <ul>
+                        <li>✅ Zwiększa energię</li>
+                        <li>✅ Poprawia koncentrację</li>
+                        <li>✅ Wysoka jakość składników</li>
+                    </ul>
+                    <button onclick="addToCart('Przedtreningówka')">Dodaj do koszyka</button>
+                </div>
+
+                <div class="produkt">
+                    <img src="bialko.jpg" alt="Białko">
+                    <h3>Białko serwatkowe</h3>
+                    <p class="price">120 zł</p>
+                    <ul>
+                        <li>✅ 100% białka serwatkowego</li>
+                        <li>✅ Wysoka jakość</li>
+                        <li>✅ Smak czekoladowy</li>
+                    </ul>
+                    <button onclick="addToCart('Białko serwatkowe')">Dodaj do koszyka</button>
+                </div>
+
+                <div class="produkt">
+                    <img src="batonik.jpg" alt="Batonik">
+                    <h3>Batonik proteinowy</h3>
+                    <p class="price">15 zł</p>
+                    <ul>
+                        <li>✅ Idealna przekąska przed treningiem</li>
+                        <li>✅ Wysoka zawartość białka</li>
+                        <li>✅ Bez dodatku cukru</li>
+                    </ul>
+                    <button onclick="addToCart('Batonik proteinowy')">Dodaj do koszyka</button>
+                </div>
+
+                <div class="produkt">
+                    <img src="pas.jpg" alt="Pas treningowy">
+                    <h3>Pas treningowy</h3>
+                    <p class="price">90 zł</p>
+                    <ul>
+                        <li>✅ Wspiera kręgosłup</li>
+                        <li>✅ Wysoka jakość materiału</li>
+                        <li>✅ Idealny do ciężkich treningów</li>
+                    </ul>
+                    <button onclick="addToCart('Pas treningowy')">Dodaj do koszyka</button>
+                </div>
+                
+                <div class="produkt">
+                    <img src="paski.jpg" alt="Paski usztywniające">
+                    <h3>Paski usztywniające</h3>
+                    <p class="price">60 zł</p>
+                    <ul>
+                        <li>✅ Wspomaga stabilność nadgarstków</li>
+                        <li>✅ Wykonane z trwałych materiałów</li>
+                        <li>✅ Komfort noszenia</li>
+                    </ul>
+                    <button onclick="addToCart('Paski usztywniające')">Dodaj do koszyka</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>

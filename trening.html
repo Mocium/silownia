@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Trenerzy</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <header class="header">
+        <a href="javascript:void(0);" onclick="window.location.reload();">
+            <img src="logo.jpg" alt="Gym Logo">
+        </a>
+        <nav>
+            <a href="silownia.html">Karnety</a>
+            <a href="sklep.html">Sklep</a>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <section class="trenerzy">
+            <div class="trener" id="trener1">
+                <h3>💪 Trener Jan Kowalski</h3>
+                <p class="price">120 zł/h</p>
+                <ul>
+                    <li>✅ Plan treningowy dostosowany do Twoich celów</li>
+                    <li>✅ Analiza postępów co miesiąc</li>
+                    <li>✅ Możliwość konsultacji online</li>
+                </ul>
+                <button onclick="pokazSzczegoly('trener1')">WYBIERAM</button>
+            </div>
+    
+            <div class="trener" id="trener2">
+                <h3>🔥 Trenerka Anna Nowak</h3>
+                <p class="price">150 zł/h</p>
+                <ul>
+                    <li>✅ Dieta + suplementacja w cenie</li>
+                    <li>✅ Treningi personalne 1:1</li>
+                    <li>✅ Dostęp do prywatnej aplikacji</li>
+                </ul>
+                <button onclick="pokazSzczegoly('trener2')">WYBIERAM</button>
+            </div>
+        </section>
+    
+        <!-- Sekcja na szczegóły trenera -->
+        <div id="szczegoly" class="szczegoly" style="display: none;"></div>
+    </div>
+    
+        </section>
+    </div>
+</body>
+<script src='main.js'></script>
+</html>
