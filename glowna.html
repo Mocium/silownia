@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Siłownia GymPower - nowoczesny sprzęt, profesjonalni trenerzy i sklep z suplementami. Zapraszamy do naszej siłowni!">
+    <title>Siłownia GymPower</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <a href="javascript:void(0);" onclick="window.location.reload();">
+                <img src="logo.jpg" alt="Gym Logo">
+            </a>
+            <nav>
+                <a href="trening.html">Trening</a>
+                <a href="silownia.html">karnety</a>
+                <a href="sklep.html">Sklep</a>
+            </nav>
+        </header>
+        <main>
+            <!-- Sekcja witająca -->
+            <section class="intro">
+                <div class="intro-content">
+                    <h1>Witamy w naszej siłowni</h1>
+                    <p>Zapraszamy do najlepiej wyposażonej siłowni w mieście! Oferujemy nowoczesny sprzęt, profesjonalnych trenerów i świetną atmosferę.</p>
+                </div>
+            </section>
+
+            <!-- Sekcja oferty -->
+            <section class="offer">
+                <div class="offer-item">
+                    <h2>Nasza Oferta</h2>
+                    <div class="offer-content">
+                        <h3>🏋️ Nowoczesny sprzęt</h3>
+                        <p>Nasza siłownia jest wyposażona w najnowsze maszyny do treningu siłowego i cardio.</p>
+                    </div>
+                    <div class="offer-content">
+                        <h3>💪 Profesjonalni trenerzy</h3>
+                        <p>Nasi trenerzy pomogą Ci osiągnąć wymarzoną sylwetkę i poprawić kondycję.</p>
+                    </div>
+                    <div class="offer-content">
+                        <h3>🛒 Sklep z suplementami</h3>
+                        <p>Oferujemy szeroki wybór odżywek i suplementów dostępnych na recepcji.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Przycisk do wyświetlania mapy -->
+            <div class="cta">
+                <button id="mapkasilka" onclick="showMap()">Pobliskie siłownie</button>
+            </div>
+            
+            <!-- Mapa -->
+            <div id="map-container" style="display: none; margin-top: 20px; text-align: center;">
+                <iframe src="https://www.google.com/maps/d/embed?mid=1XLJ9xTxTbsER5kq5IG05bQ5jPzoByEg&ehbc=2E312F"
+                width="70%" 
+                height="450">
+                </iframe>
+            </div> 
+        </main>
+
+</body>
+<script src='main.js'></script>
+</html>
