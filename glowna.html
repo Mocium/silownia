@@ -15,12 +15,14 @@
             </a>
             <nav>
                 <a href="trening.html">Trening</a>
-                <a href="silownia.html">karnety</a>
+                <a href="silownia.html">Karnety</a>
                 <a href="sklep.html">Sklep</a>
+               
+                <button id="logout-btn" style="display: none;" onclick="logout()">Wyloguj się</button>
             </nav>
         </header>
         <main>
-            <!-- Sekcja witająca -->
+           
             <section class="intro">
                 <div class="intro-content">
                     <h1>Witamy w naszej siłowni</h1>
@@ -28,7 +30,7 @@
                 </div>
             </section>
 
-            <!-- Sekcja oferty -->
+           
             <section class="offer">
                 <div class="offer-item">
                     <h2>Nasza Oferta</h2>
@@ -47,12 +49,12 @@
                 </div>
             </section>
 
-            <!-- Przycisk do wyświetlania mapy -->
+          
             <div class="cta">
                 <button id="mapkasilka" onclick="showMap()">Pobliskie siłownie</button>
             </div>
             
-            <!-- Mapa -->
+            
             <div id="map-container" style="display: none; margin-top: 20px; text-align: center;">
                 <iframe src="https://www.google.com/maps/d/embed?mid=1XLJ9xTxTbsER5kq5IG05bQ5jPzoByEg&ehbc=2E312F"
                 width="70%" 
@@ -61,6 +63,19 @@
             </div> 
         </main>
 
+        <div id="registration-modal" class="registration-modal">
+            <div class="modal-content">
+                <h2>Zarejestruj się, aby kontynuować</h2>
+                <form id="registration-form">
+                    <label for="username">Nazwa użytkownika:</label>
+                    <input type="text" id="username" required><br><br>
+                    <label for="password">Hasło:</label>
+                    <input type="password" id="password" required><br><br>
+                    <button type="submit">Zarejestruj się</button>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
-<script src='main.js'></script>
+<script src="main.js"></script>
 </html>

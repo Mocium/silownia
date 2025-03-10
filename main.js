@@ -1,3 +1,56 @@
+document.addEventListener('DOMContentLoaded', function () {
+    
+    if (!localStorage.getItem('isRegistered')) {
+        
+        document.getElementById('registration-modal').style.display = 'block';
+        
+        document.body.style.overflow = 'hidden';
+        
+        document.getElementById('logout-btn').style.display = 'none';
+    } else {
+       
+        document.body.style.overflow = 'auto';
+        
+        document.getElementById('logout-btn').style.display = 'block';
+    }
+
+    
+    document.getElementById('registration-form').addEventListener('submit', function (e) {
+        e.preventDefault(); 
+
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+
+        
+
+       
+        localStorage.setItem('isRegistered', true);
+        localStorage.setItem('username', username);
+
+        
+        document.getElementById('registration-modal').style.display = 'none';
+        
+        document.body.style.overflow = 'auto';
+        
+        document.getElementById('logout-btn').style.display = 'block';
+    });
+});
+
+
+function logout() {
+    
+    localStorage.removeItem('isRegistered');
+    localStorage.removeItem('username');
+
+    document.getElementById('registration-modal').style.display = 'block';
+    document.body.style.overflow = 'hidden';
+    document.getElementById('logout-btn').style.display = 'none';
+}
+
+function showMap() {
+    const mapContainer = document.getElementById('map-container');
+    mapContainer.style.display = mapContainer.style.display === 'none' ? 'block' : 'none';
+}
 function showMap() {
     var mapContainer = document.getElementById("map-container");
     if (mapContainer.style.display === "none" || mapContainer.style.display === "") {
